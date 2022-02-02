@@ -26,19 +26,19 @@ dev.off()
 options(width = 120)
 sessioninfo::session_info()
 
-Session info ───────────────────────────────────────────────────────────────────────────────────────────────────────
-setting  value
-version  R version 4.1.2 (2021-11-01)
-os       Ubuntu 20.04.3 LTS
-system   x86_64, linux-gnu
-ui       RStudio
-language es_MX:en
-collate  es_MX.UTF-8
-ctype    es_MX.UTF-8
-tz       America/Mexico_City
-date     2022-02-01
-rstudio  1.4.1717 Juliet Rose (desktop)
-pandoc   2.5 @ /usr/bin/pandoc
+# Session info ───────────────────────────────────────────────────────────────────────────────────────────────────────
+# setting  value
+# version  R version 4.1.2 (2021-11-01)
+# os       Ubuntu 20.04.3 LTS
+# system   x86_64, linux-gnu
+# ui       RStudio
+# language es_MX:en
+# collate  es_MX.UTF-8
+# ctype    es_MX.UTF-8
+# tz       America/Mexico_City
+# date     2022-02-01
+# rstudio  1.4.1717 Juliet Rose (desktop)
+# pandoc   2.5 @ /usr/bin/pandoc
 
 # ─ Packages ───────────────────────────────────────────────────────────────────────────────────────────────────────────
 # package     * version date (UTC) lib source
