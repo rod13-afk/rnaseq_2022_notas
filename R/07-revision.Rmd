@@ -1,0 +1,33 @@
+---
+title: '07-revision'
+author: "Rodrigo Daniel"
+date: "4/2/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Ejercicio en equipo 
+
+speaqeasy_data <- file.path(tempdir(), "rse_speaqeasy.RData")
+download.file("https://github.com/LieberInstitute/SPEAQeasy-example/blob/master/rse_speaqeasy.RData?raw=true", speaqeasy_data, mode = "wb")
+library("SummarizedExperiment")
+load(speaqeasy_data, verbose = TRUE)
+
+rse_gene
+
+library("ggplot2")
+
+ggplot(as.data.frame(colData(rse_gene)), aes(y = totalAssignedGene, x = PrimaryDx)) +
+    geom_boxplot() +
+    theme_bw(base_size = 20) +
+    ylab("totalAssignedGene") +
+    xlab("PrimaryDx")
+
+iSEE::iSEE(rse_gene)
+
+
+
+
